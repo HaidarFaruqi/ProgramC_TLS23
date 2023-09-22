@@ -1,0 +1,87 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    int nilai1;
+    int nilai2;
+    int nilai3;
+    int pilihan;
+    double luas;
+
+    cout << "Opsi Bangun Datar:" << endl;
+    cout << "1.Lingkaran \t \t 2.Persegi" << endl;
+    cout << "3.Persegi panjang \t 4.Trapesium" << endl;
+    cout << "5.Jajar Genjang \t 6. Belah ketupat" << endl;
+    cout << "7.Layang-layang \t 8. Segitiga" << endl;
+    cout << "Tentukan yang akan dicari luasnya :" << endl;
+    cin >> pilihan;
+    
+    if (pilihan == 1){
+    cout << "Masukkan Nilainya:" << endl;
+    cout << "Jari-jari:";
+    cin >> nilai1;
+    luas = M_PI * nilai1 * nilai1;
+    cout << "Luas lingkaran :" << luas;
+}else if (pilihan == 2){
+    cout << "Masukkan Nilainya:" << endl;
+    cout << "Sisi:";
+    cin >> nilai1;
+    luas = nilai1 * nilai1;
+    cout << "Luas Persegi :" << luas;
+}else if (pilihan == 3){
+    cout << "Masukkan Nilainya:" << endl;
+    cout << "Panjang:";
+    cin >> nilai1;
+    cout << "Lebar:";
+    cin >> nilai2;
+    luas = nilai1 * nilai2;
+    cout << "Luas Persegi Panjang:" << luas;
+}else if (pilihan == 4){
+    cout << "Masukkan Nilainya:" << endl;
+    cout << "Sisi Atas:";
+    cin >> nilai1;
+    cout << "Sisi Bawah:";
+    cin >> nilai2;
+    cout << "Tinggi:";
+    cin >> nilai3;
+    luas = 0.5 * nilai3 * (nilai1 + nilai2);
+    cout << "Luas Trapesium:" << luas;
+}else if (pilihan == 5){
+    cout << "Masukkan Nilainya:" << endl;
+    cout << "Sisi Datar:";
+    cin >> nilai1;
+    cout << "Tinggi:";
+    cin >> nilai2;
+    luas = nilai1 * nilai2;
+    cout << "Luas Jajar Genjang:" << luas;
+}else if (pilihan == 6){
+    cout << "Masukkan Nilainya:"<< endl;
+    cout << "Diagonal 1:";
+    cin >> nilai1;
+    cout << "Diagonal 2:";
+    cin >> nilai2;
+    luas = 0.5 * nilai1 * nilai2;
+    cout << "Luas Belah Ketupat:" << luas;
+}else if (pilihan == 7){
+    cout << "Masukkan Nilainya:" << endl;
+    cout << "Diagonal 1:";
+    cin >> nilai1;
+    cout << "Diagonal 2:";
+    cin >> nilai2;
+    luas = 0.5 * nilai1 * nilai2;
+    cout << "Luas Layang-Layang:" << luas;
+}else if (pilihan == 8){
+    cout << "Masukkan Nilainya:" << endl;
+    cout << "Sisi Alas:";
+    cin >> nilai1;
+    cout << "Tinggi:";
+    cin >> nilai2;
+    luas = 0.5 * nilai1 * nilai2;
+    cout << "Luas Segitiga:" << luas;
+}else if (pilihan >= 8){
+    cout << "Opsi Tidak Valid";
+}
+return 0;
+}
